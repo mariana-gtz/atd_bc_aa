@@ -119,9 +119,8 @@ streamlit run streamlit_app.py
 
 
 ## Notes and Observations
-- **Known Limitations**: Incomplete data might alter the visualizations.
-- **Future Development Plans**: Add weather factors that commonly impact deliveries.
-- **Best Practices**: Clone the repo and have fun playing with the data.
+- **Known Limitations**: Data availability might not be complete and affect some visualizations.
+- **Future Development Plans**: Incorporation of weather metrics could be useful.
 
 
 ## Contact
