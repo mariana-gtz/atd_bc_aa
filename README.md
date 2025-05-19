@@ -109,7 +109,7 @@ $VIRTUAL_ENV_DIR/atd_bc_aa/bin/pip check
 
 #### Download needed data:
 - Go to [this link](https://drive.google.com/file/d/1JOlK0MKo11p2wI3rDnxIzvVzGg-oVPnw/view?usp=sharing) and download the data.
-- Go to your `data` folder and drag and drop the downloaded file. **Note: it must be named: BC_A&A_with_ATD.csv**
+- Go to your `data` folder and drag and drop the downloaded file. **File must be named: BC_A&A_with_ATD.csv**
 
 
 #### Run your streamlit_app
