@@ -6,7 +6,8 @@ This Streamlit dashboard is designed as a tool that can inform decision-making a
 
 ---
 ## Project Overview
-
+- [README.md](/README.md) – 📘 Project usage, setup, and documentation
+- [.gitignore](/.gitignore) – Files to be excluded from commits
 - [streamlit_app.py](/streamlit_app.py) - 🚀 Main entry point for the Streamlit dashboard
 - [views/](/views) – 📊 Individual Streamlit views
     - [home.py](/views/home.py) – Home page with context and instructions
@@ -15,57 +16,14 @@ This Streamlit dashboard is designed as a tool that can inform decision-making a
     - [controllers/](/modules/controllers/)
         - [atd_view_controller.py](/modules/controllers/atd_view_controller.py) – Business logic for dashboard metrics
     - [admin/](/modules/admin/)
-        - [dataspitter.py/](/modules/admin/dataspitter.py) – Data loading and preprocessing logic
-controllers/
-
-atd_view_controller.py – Business logic for dashboard metrics
-
-admin/
-
-dataspitter.py – Data loading and preprocessing logic
-
-config/
-
-constants.py – 🔧 Central definitions (columns, toggles, colors)
-
-data/ – 📁 Input/output files
-
-BC_A&A_with_ATD.csv – Original source data
-
-BC_A&A_with_ATD.parquet – Optimized Parquet version
-
-requirements/
-
-requirements.txt – 📦 Dependency list
-
-assets/ – 🖼️ Static resources
-
-styles.css – Dashboard styles
-
-logo.png – Logo used in app layout
-
-README.md – 📘 Project usage, setup, and documentation
-
-│   ├── [controllers/](/modules/controllers/)
-│   │   └── [atd_view_controller.py](/modules/controllers/atd_view_controller.py)  # Business logic and data processing for the atd_view dashboard
-│   ├── [admin/](/modules/admin/)
-│   │   └── dataspitter.py  # Data loading and processing logic
-│
-├── config/
-│   └── constants.py             # 🔧 Central config for column names, toggles, color schemes, etc.
-│
-├── data/                        # 📁 Local folder to store input/output files
-│   ├── BC_A&A_with_ATD.csv      # Original source data
-│   └── BC_A&A_with_ATD.parquet  # Processed Parquet file for efficient reads
-│
-├── requirements/
-│   └── requirements.txt         # 📦 Python dependencies for environment setup
-│
-├── assets/                      # 🖼️ Static assets (images, CSS, logos)
-│   ├── styles.css               # Custom styling for the dashboard
-│   └── logo.png                 # Branding/logo used in header/sidebar
-│
-└── README.md                    # 📘 This file: project description, usage, and contribution guide
+        - [dataspitter.py](/modules/admin/dataspitter.py) – Data loading and preprocessing logic
+- [assets/](/assets) – 🖼️ Static resources (CSS and images used in the app)
+- [config/](/config)
+    -  [constants.py](/config/constants.py) – 🔧 Central definitions (columns, toggles, colors)
+-  [data/](/data) – 📁 Where Input/output files store.
+-  [requirements/](/requirements)
+     - [requirements.txt](/requirements/requirements.txt) – 📦 Dependency list
+ - [utils/](/utils) - Common used methods for data processing.
 
 ---
  
