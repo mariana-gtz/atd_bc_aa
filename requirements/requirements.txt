@@ -184,6 +184,7 @@ webencodings==0.5.1
 websocket-client==1.6.4
 Werkzeug==3.0.1
 wheel==0.41.3
+xgboost==2.1.4
 xyzservices==2023.10.1
 yarl==1.9.2
 zipp==3.17.0
