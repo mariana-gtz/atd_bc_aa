@@ -6,15 +6,46 @@ This Streamlit dashboard is designed as a tool that can inform decision-making a
 
 ---
 ## Project Overview
-atd_bc_aa/
-│
-├── [streamlit_app.py](/streamlit_app.py)             # 🚀 Main entry point for the Streamlit dashboard
-│
-├── [views/](/views)                       # 📊 Individual Streamlit views/pages
-│   ├── [home.py](/views/home.py)                  # Home page with project overview, instructions, and context
-│   └── [atd_view.py](/views/atd_view.py)              # ATD dashboard page (charts, metrics, interactions)
-│
-├── [modules/](/modules)                     # 🧠 Modular backend logic
+
+- [streamlit_app.py](/streamlit_app.py) - 🚀 Main entry point for the Streamlit dashboard
+- [views/](/views) – 📊 Individual Streamlit views
+    - [home.py](/views/home.py) – Home page with context and instructions
+    - [atd_view.py](/views/atd_view.py) – Core ATD dashboard page
+- [modules/](/modules) – 🧠 Modular backend logic
+    - [controllers/](/modules/controllers/)
+        - [atd_view_controller.py](/modules/controllers/atd_view_controller.py) – Business logic for dashboard metrics
+    - [admin/](/modules/admin/)
+        - [dataspitter.py/](/modules/admin/dataspitter.py) – Data loading and preprocessing logic
+controllers/
+
+atd_view_controller.py – Business logic for dashboard metrics
+
+admin/
+
+dataspitter.py – Data loading and preprocessing logic
+
+config/
+
+constants.py – 🔧 Central definitions (columns, toggles, colors)
+
+data/ – 📁 Input/output files
+
+BC_A&A_with_ATD.csv – Original source data
+
+BC_A&A_with_ATD.parquet – Optimized Parquet version
+
+requirements/
+
+requirements.txt – 📦 Dependency list
+
+assets/ – 🖼️ Static resources
+
+styles.css – Dashboard styles
+
+logo.png – Logo used in app layout
+
+README.md – 📘 Project usage, setup, and documentation
+
 │   ├── [controllers/](/modules/controllers/)
 │   │   └── [atd_view_controller.py](/modules/controllers/atd_view_controller.py)  # Business logic and data processing for the atd_view dashboard
 │   ├── [admin/](/modules/admin/)
