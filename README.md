@@ -119,9 +119,9 @@ streamlit run streamlit_app.py
 
 
 ## Notes and Observations
-- **Known Limitations**: Describe any current limitations of the project.
-- **Future Development Plans**: Mention upcoming features or improvements.
-- **Best Practices**: Provide guidelines for running or contributing to the project.
+- **Known Limitations**: Incomplete data might alter the visualizations.
+- **Future Development Plans**: Add weather factors that commonly impact deliveries.
+- **Best Practices**: Clone the repo and have fun playing with the data.
 
 
 ## Contact
