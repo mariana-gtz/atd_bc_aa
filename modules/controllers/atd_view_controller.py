@@ -736,7 +736,7 @@ class ATDController:
         flow_chart = base_chart.transform_filter(
             alt.datum[column_to_plot] != "Overall Average"
         ).mark_line().encode(
-            x=alt.X(f"{selected_interval_column}:T", title=selected_interval_column.capitalize()),
+            x=alt.X(f"{selected_interval_column}:T", title=selected_interval_column.upper()),
             y=alt.Y(f"{column_to_aggregate[0]}:Q", title=f"Average {column_to_aggregate[0]} (minutes)"),
             color=color_encoding,
             tooltip=[column_to_plot, selected_interval_column, f"{column_to_aggregate[0]}"]
@@ -753,7 +753,7 @@ class ATDController:
 
         # Combine
         chart = (flow_chart + avg_chart).properties(
-            title=f"{column_to_aggregate[0].capitalize()} Trend by {title_column.capitalize()}",
+            title=f"{column_to_aggregate[0].upper()} Trend by {title_column.upper()}",
             height=400
         )
 
