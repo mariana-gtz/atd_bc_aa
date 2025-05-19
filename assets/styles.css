@@ -1,0 +1,139 @@
+/* Theme Colors */
+:root {
+    --primary-color: #06C167 !important; /* UE Green */
+    --background-color: #ffffff !important; /* white */
+    --secondary-background-color: #0F462D !important; /* Dark Green */
+    --text-color-black: #000000 !important;
+    --text-color-white: #ffffff !important;
+    --text-color-light-gray: rgba(255, 255, 255, 0.4) !important; /* Lightest possible gray */
+}
+
+/* Specifically target elements with #ff4b4b as text color */
+*[style*="color: #ff4b4b"] {
+    color: var(--primary-color) !important;
+}
+
+/* Specifically target elements with #ff4b4b as background color */
+*[style*="background-color: #ff4b4b"] {
+    background-color: var(--primary-color) !important;
+}
+
+/* Specifically target elements with #ff4b4b as border color */
+*[style*="border-color: #ff4b4b"] {
+    border-color: var(--primary-color) !important;
+}
+
+/* Background color for main content */
+.stApp {
+    background-color: var(--background-color) !important;
+}
+
+/* Text color */
+html, body, .stText, .stMarkdown {
+    color: var(--text-color-black) !important;
+}
+
+/* Sidebar customization */
+section[data-testid="stSidebar"] {
+    background-color: var(--secondary-background-color) !important;
+}
+
+/* Increase font size & ensure sidebar text is white */
+section[data-testid="stSidebar"] * {
+    color: var(--text-color-white) !important;
+    font-size: 18px !important; /* Adjust size as needed */
+}
+
+/* Target navigation section headers (General Info, SMB Specific Views) */
+header[data-testid="stNavSectionHeader"] {
+    color: var(--text-color-light-gray) !important; /* Lighter gray */
+    font-size: 17px !important;
+    font-weight: 300 !important;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important; /* Thin white border */
+    margin-bottom: 8px; /* Add spacing between sections */
+}
+
+/* Ensure sidebar navigation links remain white */
+a[data-testid="stSidebarNavLink"] span {
+    color: var(--text-color-white) !important;
+}
+
+/* Highlight the active/selected page in primary color */
+a[data-testid="stSidebarNavLink"][aria-current="page"] {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important; /* Make selected link bold */
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+/* Sliders */
+.stSlider > div[data-baseweb="slider"] > div {
+    background-color: var(--primary-color) !important;
+}
+
+/* Text input fields */
+.stTextInput>div>div>input {
+    color: var(--text-color-black) !important;
+}
+
+/* Apply primary color to selected tags */
+span[data-baseweb="tag"] {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
+}
+
+/* Apply primary color to selected filter tags */
+div[data-baseweb="tag"] {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Apply primary color to filter borders */
+div[data-baseweb="select"] {
+    border-color: var(--primary-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+}
+
+/* Background color for main content */
+.stAppHeader {
+    background: var(--background-color) !important;
+    color: black !important;
+}
+
+.ag-row-hover{
+    color: black !important
+}
+
+div[data-testid="stMarkdownContainer"] p {
+    color: black !important;
+}
+
+.st-emotion-cache-1f3w014 {
+    color: black !important;
+}
+
+.agg-theme-balham-dark {
+    --ag-background-color: white !important;
+    --ag-odd-row-background-color: #fcfdfe !important;
+}
+
+.menu a.nav-link-horizontal.active {
+    background-color: var(--primary-color) !important;
+}
+
+
+/* Hide Streamlit Toolbar 
+header[data-testid="stHeader"] {
+    display: none !important;
+}*/
